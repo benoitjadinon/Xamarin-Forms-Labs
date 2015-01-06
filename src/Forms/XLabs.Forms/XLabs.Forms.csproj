@@ -51,7 +51,6 @@
     <Compile Include="Controls\AutoComplete.cs" />
     <Compile Include="Controls\BindablePicker.cs" />
     <Compile Include="Controls\ButtonGroup.cs" />
-    <Compile Include="Controls\CalendarView.cs" />
     <Compile Include="Controls\CameraView.cs" />
     <Compile Include="Controls\CarouselView.cs" />
     <Compile Include="Controls\CheckBox.cs" />
