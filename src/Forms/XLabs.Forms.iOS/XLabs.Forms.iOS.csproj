@@ -25,7 +25,6 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <DocumentationFile>..\..\..\build\XLabs.Forms.iOS.XML</DocumentationFile>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -52,12 +51,6 @@
     <Compile Include="Controls\AccessoryViewCell\AccessoryViewCellRenderer.cs" />
     <Compile Include="Controls\BindablePick\BindablePickerRenderer.cs" />
     <Compile Include="Controls\BindablePick\NoCaretField.cs" />
-    <Compile Include="Controls\Calendar\CalendarArrowView.cs" />
-    <Compile Include="Controls\Calendar\CalendarDayView.cs" />
-    <Compile Include="Controls\Calendar\CalendarMonthView.cs" />
-    <Compile Include="Controls\Calendar\CalendarViewRenderer.cs" />
-    <Compile Include="Controls\Calendar\MonthGridView.cs" />
-    <Compile Include="Controls\Calendar\StyleDescriptor.cs" />
     <Compile Include="Controls\CameraView\CameraViewRenderer.cs" />
     <Compile Include="Controls\CheckBoxViewCell\CheckBoxCellRenderer.cs" />
     <Compile Include="Controls\CheckBox\CheckBoxRenderer.cs" />
