@@ -1,7 +1,9 @@
-﻿namespace XLabs.Forms.Controls
+using System;
+
+namespace XLabs.Forms.Controls
 {
-	using MonoTouch.Foundation;
-	using MonoTouch.UIKit;
+	using Foundation;
+	using UIKit;
 
 	/// <summary>
 	/// Class GridDataSource.
@@ -63,9 +65,9 @@
 		/// <param name="collectionView">The collection view.</param>
 		/// <param name="section">The section.</param>
 		/// <returns>System.Int32.</returns>
-        public override int GetItemsCount (UICollectionView collectionView, int section)
+        public override nint GetItemsCount (UICollectionView collectionView, nint section)
         {
-            return _onRowsInSection(collectionView, section);
+            return _onRowsInSection(collectionView, (int)section);
         }
 
 		/// <summary>

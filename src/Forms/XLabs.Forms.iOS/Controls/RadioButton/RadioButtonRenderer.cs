@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using MonoTouch.UIKit;
+using UIKit;
 using Xamarin.Forms;
 
 using Xamarin.Forms.Platform.iOS;
@@ -53,9 +53,9 @@ namespace XLabs.Forms.Controls
 
 			var width = this.Control.TitleLabel.Bounds.Width;
 
-			var height = text.StringHeight(this.Control.Font, width);
+			var height = text.StringHeight(this.Control.Font, (float)width);
 
-			var minHeight = string.Empty.StringHeight(this.Control.Font, width);
+			var minHeight = string.Empty.StringHeight(this.Control.Font, (float)width);
 
 			var requiredLines = Math.Round(height / minHeight, MidpointRounding.AwayFromZero);
 
@@ -69,7 +69,7 @@ namespace XLabs.Forms.Controls
 			}
 		}
 
-		public override void Draw(System.Drawing.RectangleF rect)
+		public override void Draw(CoreGraphics.CGRect rect)
 		{
 			base.Draw(rect);
 			this.ResizeText();

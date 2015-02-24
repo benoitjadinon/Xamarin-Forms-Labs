@@ -9,7 +9,7 @@ namespace XLabs.Forms.Controls
 	using System;
 	using System.ComponentModel;
 
-	using MonoTouch.UIKit;
+	using UIKit;
 
 	using Xamarin.Forms.Platform.iOS;
 
@@ -64,9 +64,9 @@ namespace XLabs.Forms.Controls
 
 			var width = Control.TitleLabel.Bounds.Width;
 
-			var height = text.StringHeight(Control.Font, width);
+			var height = text.StringHeight(Control.Font, (float)width);
 
-			var minHeight = string.Empty.StringHeight(Control.Font, width);
+			var minHeight = string.Empty.StringHeight(Control.Font, (float)width);
 
 			var requiredLines = Math.Round(height / minHeight, MidpointRounding.AwayFromZero);
 
@@ -84,7 +84,7 @@ namespace XLabs.Forms.Controls
 		/// Draws the specified rect.
 		/// </summary>
 		/// <param name="rect">The rect.</param>
-		public override void Draw(System.Drawing.RectangleF rect)
+		public override void Draw(CoreGraphics.CGRect rect)
 		{
 			base.Draw(rect);
 			ResizeText();
